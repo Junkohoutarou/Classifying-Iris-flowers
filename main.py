@@ -28,3 +28,6 @@ else:
         feature_vector = np.array([sepal_length, sepal_width, petal_length, petal_width])
         feature_vector = feature_vector.reshape(1, -1)
         label = str((model.predict(feature_vector))[0])
+
+        st.header('Result')
+        st.text(class_list[label])
